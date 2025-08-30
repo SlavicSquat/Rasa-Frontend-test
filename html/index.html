@@ -1,0 +1,566 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Машинки тестовое</title>
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/body.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        </style>
+    </head>
+
+    <header class="header">
+
+        <div class="header_top">
+            <div class="site-sections">
+                <div class="site-sections_left">
+                    <a href="#" class="site-section site-section_active">Частным клиентам</a>
+                    <a href="#" class="site-section">Для бизнеса</a>
+                </div>
+                <div class="site-sections_right">
+                    <a href="#" class="site-section"> О банке</a>
+                    <a href="#" class="site-section">Офисы</a>
+                </div>
+            </div>
+            <div class="header__info">
+                <h1 class="header__phone">8 (800) 775-56-06</h1>
+                <p class="header__location">Хабаровск</p>
+                <p class="header__language">English</p>
+            </div>
+        </div>
+
+        <div class="header_bottom">
+            <div class="header_bottom-left">
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="../img/logo/solid_logo.png" alt="Солид банк">
+                    </a>
+                </div>
+                <div class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">Кредиты</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">Вклады</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">Обмен валют</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">Карты</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">Ипотека</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">Переводы</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">Страхование</a>
+                        </li>   
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">Страхование</a>
+                        </li> 
+                        <li class="header__menu-item header__menu-item_last">
+                            <a href="#" class="header__menu-link">Сервисы</a>
+                        </li>
+                        <li class="header__menu-item header__menu-item_last header__menu-item_mobile">
+                            <a href="#" class="header__menu-link">Ещё</a>
+                        </li>                
+                    </ul>
+                </div>
+            </div>
+            <div class="header_bottom-right">
+                <a class="header__call" href="#">Заказать звонок</a>
+                <a class="header__login" href="#">Интернет - банк</a>
+            </div>
+        </div>
+
+        <div class="breadcrumbs">
+            <a href="#" class="breadcrumbs__item">Главная</a>
+            <a href="#" class="breadcrumbs__item">Кредит</a>
+            <a href="#" class="breadcrumbs__item breadcrumbs__item-active">Автокредит</a>
+        </div>
+
+        <div class="banner">
+            <div class="banner__offer">
+                <div class="banner__offer-info">
+                    <h1 class="banner__offer-info-title">Автокредит от 7,5% годовых</h1>
+                    <p class="banner__offer-info-description">на покупку авто у диллера или частного лица</p>
+                </div>
+                <button class="banner__offer-button">Оформить</button>
+            </div>
+            <img class="banner__picture" src="../img/banner/main_pic.png" alt="Авсё">
+        </div>
+    </header>
+
+    <body>
+        <div class="main">
+            <div class="car-select">
+                <div class="car-select_top">
+                    <div class="car-select__title">
+                        <h1 class="car-select__title-text">Выберите себе авто</h1>
+                    </div>
+                    <div class="car-select__roll-up">
+                        <button class="car-select__roll-up-button">Свернуть список машин</button>
+                    </div>
+                </div>
+                <div class="filters">
+                    <div class="filters__item" id="filters__mark">
+                        <p class="filters__title">Марка</p>
+                        <div class="inputbox-with-arrow">
+                            <input type="text" placeholder="Выбрать" class="filters__input">
+                        </div>
+                    </div>
+                    <div class="filters__item" id="filters__year">
+                        <p class="filters__title">Год</p>
+                        <div class="inputbox-with-arrow">
+                            <input type="text" placeholder="Выбрать" class="filters__input">
+                        </div>
+                    </div>
+                    <div class="filters__item" id="filters__price">
+                        <p class="filters__title">Цена</p>
+                        <div class="filters__inputs-from-to">
+                            <input type="text" placeholder="От" class="filters__input" id="filters__input_from">
+                            <img src="../img/icons/filters__line.svg">
+                            <input type="text" placeholder="До" class="filters__input" id="filters__input_to">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="best-offers">
+                <div class="best-offers__item">
+                    <div class="best-offers__text">
+                        <p class="best-offers__microinfa">Лучшее предложение</p>
+                        <h1 class="best-offers__title">Renault Arkana drive</h1>
+                        <p class="best-offers__description">Купе-кроссовер Renault ARKANA — автомобиль, созданный с чистого листа. В нем все по-новому: от дизайна кузова до эргономики салона. Получилось эмоционально и надежно — оцените сами!</p>
+                        <p class="best-offers__price">от 1 316 000 ₽</p>
+                        <a href="#" class="best-offers__more">Подробнее</a>
+                    </div>
+                    <div class="slider">
+                        <button class="slider__button slider__prev"></button>
+                        <div class="slider__slides">
+                            <div class="slider__slide slide_active">
+                                <img src="../img/cars/carousel-ren/img.png" alt="Картинка адын">
+                            </div>
+                            <div class="slider__slide">
+                                <img src="../img/cars/carousel-bmw/img.png" alt="Картинка два">
+                            </div>
+                        </div>
+                        <button class="slider__button slider__next"></button>
+                    </div>
+                </div>
+                <div class="best-offers__item">
+                    <div class="best-offers__text">
+                        <p class="best-offers__microinfa">Лучшее предложение</p>
+                        <h1 class="best-offers__title">Volkswagen Tiguan PA</h1>
+                        <p class="best-offers__description">Купе-кроссовер Renault ARKANA — автомобиль, созданный с чистого листа. В нем все по-новому: от дизайна кузова до эргономики салона. Получилось эмоционально и надежно — оцените сами!</p>
+                        <p class="best-offers__price">от 2 395 000 ₽</p>
+                        <a href="#" class="best-offers__more">Подробнее</a>
+                    </div>
+                    <div class="slider">
+                        <button class="slider__button slider__prev"></button>
+                        <div class="slider__slides">
+                            <div class="slider__slide slide_active">
+                                <img src="../img/cars/carousel-volk/img.png" alt="Картинка адын">
+                            </div>
+                            <div class="slider__slide">
+                                <img src="../img/cars/carousel-bmw/img.png" alt="Картинка два">
+                            </div>
+                        </div>
+                        <button class="slider__button slider__next"></button>
+                    </div>
+                </div>
+                <div class="best-offers__item">
+                    <div class="best-offers__text">
+                        <p class="best-offers__microinfa">Лучшее предложение</p>
+                        <h1 class="best-offers__title">BMW X7</h1>
+                        <p class="best-offers__description">Купе-кроссовер Renault ARKANA — автомобиль, созданный с чистого листа. В нем все по-новому: от дизайна кузова до эргономики салона. Получилось эмоционально и надежно — оцените сами!</p>
+                        <p class="best-offers__price">от 8 188 000</p>
+                        <a href="#" class="best-offers__more">Подробнее</a>
+                    </div>
+                    <div class="slider">
+                        <button class="slider__button slider__prev"></button>
+                        <div class="slider__slides">
+                            <div class="slider__slide slide_active">
+                                <img src="../img/cars/carousel-bmw/img.png" alt="Картинка адын">
+                            </div>
+                            <div class="slider__slide">
+                                <img src="../img/cars/carousel-ren/img.png" alt="Картинка два">
+                            </div>
+                        </div>
+                        <button class="slider__button slider__next"></button>
+                    </div>
+                </div>
+            </div>
+            <script src="../js/slider.js"></script>
+
+            <div class="common-offers">
+                <div class="common-offers__item">
+                    <img class="common-offers__pic" src="../img/cars/offers/1.png" alt="Картинка машины">
+                    <div class="common-offers__info">
+                        <h1 class="common-offers__title">KIA Sportage. LUXE+ 2Л</h1>
+                        <p class="common-offers__city">г. Якутск</p>
+                        <div class="common-offers__item_down">
+                            <p class="common-offers__price">2 211 700 ₽</p>
+                            <a href="#" class="common-offers__more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="common-offers__item">
+                    <img class="common-offers__pic" src="../img/cars/offers/2.png" alt="Картинка машины">
+                    <div class="common-offers__info">
+                        <h1 class="common-offers__title">Skoda Karoq</h1>
+                        <p class="common-offers__city">г. Казань</p>
+                        <div class="common-offers__item_down">
+                            <p class="common-offers__price">1 790 000 ₽</p>
+                            <a href="#" class="common-offers__more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="common-offers__item">
+                    <img class="common-offers__pic" src="../img/cars/offers/3.png" alt="Картинка машины">
+                    <div class="common-offers__info">
+                        <h1 class="common-offers__title">Citroen c4</h1>
+                        <p class="common-offers__city">г. Уфа</p>
+                        <div class="common-offers__item_down">
+                            <p class="common-offers__price">1 523 000 ₽</p>
+                            <a href="#" class="common-offers__more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="common-offers__item">
+                    <img class="common-offers__pic" src="../img/cars/offers/4.png" alt="Картинка машины">
+                    <div class="common-offers__info">
+                        <h1 class="common-offers__title">Mercedes-benz Gls 400 D 4m Luxury</h1>
+                        <p class="common-offers__city">г. Казань</p>
+                        <div class="common-offers__item_down">
+                            <p class="common-offers__price">2 211 700 ₽</p>
+                            <a href="#" class="common-offers__more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="common-offers__item">
+                    <img class="common-offers__pic" src="../img/cars/offers/5.png" alt="Картинка машины">
+                    <div class="common-offers__info">
+                        <h1 class="common-offers__title">Mercedes-benz Gle 350 D 4matic купе</h1>
+                        <p class="common-offers__city">г. Казань</p>
+                        <div class="common-offers__item_down">
+                            <p class="common-offers__price">2 211 700 ₽</p>
+                            <a href="#" class="common-offers__more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="common-offers__item">
+                    <img class="common-offers__pic" src="../img/cars/offers/6.png" alt="Картинка машины">
+                    <div class="common-offers__info">
+                        <h1 class="common-offers__title">Mercedes-benz Gle 300 D 4matic Sport</h1>
+                        <p class="common-offers__city">г. Казань</p>
+                        <div class="common-offers__item_down">
+                            <p class="common-offers__price">2 211 700 ₽</p>
+                            <a href="#" class="common-offers__more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="common-offers__item">
+                    <img class="common-offers__pic" src="../img/cars/offers/7.png" alt="Картинка машины">
+                    <div class="common-offers__info">
+                        <h1 class="common-offers__title">Kia Sportage. Luxe+ 2.4л</h1>
+                        <p class="common-offers__city">г. Якутск</p>
+                        <div class="common-offers__item_down">
+                            <p class="common-offers__price">2 336 700 ₽</p>
+                            <a href="#" class="common-offers__more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="common-offers__item">
+                    <img class="common-offers__pic" src="../img/cars/offers/8.png" alt="Картинка машины">
+                    <div class="common-offers__info">
+                        <h1 class="common-offers__title">Kia K5. Prestige. 2.5л</h1>
+                        <p class="common-offers__city">г. Якутск</p>
+                        <div class="common-offers__item_down">
+                            <p class="common-offers__price">2 242 400 ₽</p>
+                            <a href="#" class="common-offers__more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="common-offers__item">
+                    <img class="common-offers__pic" src="../img/cars/offers/9.png" alt="Картинка машины">
+                    <div class="common-offers__info">
+                        <h1 class="common-offers__title">Honda Freed</h1>
+                        <p class="common-offers__city">С аукциона Японии.</p>
+                        <div class="common-offers__item_down">
+                            <p class="common-offers__price">от 650 000 ₽</p>
+                            <a href="#" class="common-offers__more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="common-offers__item">
+                    <img class="common-offers__pic" src="../img/cars/offers/10.png" alt="Картинка машины">
+                    <div class="common-offers__info">
+                        <h1 class="common-offers__title">Nissan Caravan (nv350)</h1>
+                        <p class="common-offers__city">С аукциона Японии</p>
+                        <div class="common-offers__item_down">
+                            <p class="common-offers__price">от 1 250 000 ₽</p>
+                            <a href="#" class="common-offers__more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="common-offers__item">
+                    <img class="common-offers__pic" src="../img/cars/offers/11.png" alt="Картинка машины">
+                    <div class="common-offers__info">
+                        <h1 class="common-offers__title">Toyota Land Cruizer Prado</h1>
+                        <p class="common-offers__city">С аукциона Японии</p>
+                        <div class="common-offers__item_down">
+                            <p class="common-offers__price">от 2 500 000 ₽</p>
+                            <a href="#" class="common-offers__more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="common-offers__item">
+                    <img class="common-offers__pic" src="../img/cars/offers/12.png" alt="Картинка машины">
+                    <div class="common-offers__info">
+                        <h1 class="common-offers__title">Toyota Vitz</h1>
+                        <p class="common-offers__city">С аукциона Японии</p>
+                        <div class="common-offers__item_down">
+                            <p class="common-offers__price">от 480 000 ₽</p>
+                            <a href="#" class="common-offers__more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="common-offers__item">
+                    <img class="common-offers__pic" src="../img/cars/offers/13.png" alt="Картинка машины">
+                    <div class="common-offers__info">
+                        <h1 class="common-offers__title">Toyota Vitz</h1>
+                        <p class="common-offers__city">С аукциона Японии</p>
+                        <div class="common-offers__item_down">
+                            <p class="common-offers__price">от 520 000 ₽</p>
+                            <a href="#" class="common-offers__more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="common-offers__item">
+                    <img class="common-offers__pic" src="../img/cars/offers/14.png" alt="Картинка машины">
+                    <div class="common-offers__info">
+                        <h1 class="common-offers__title">KIA Sportage. LUXE+ 2Л</h1>
+                        <p class="common-offers__city">С аукциона Японии</p>
+                        <div class="common-offers__item_down">
+                            <p class="common-offers__price">от 750 000 ₽</p>
+                            <a href="#" class="common-offers__more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="common-offers__item">
+                    <img class="common-offers__pic" src="../img/cars/offers/15.png" alt="Картинка машины">
+                    <div class="common-offers__info">
+                        <h1 class="common-offers__title">KIA Sportage. LUXE+ 2Л</h1>
+                        <p class="common-offers__city">С аукциона Японии</p>
+                        <div class="common-offers__item_down">
+                            <p class="common-offers__price">от 800 000 ₽</p>
+                            <a href="#" class="common-offers__more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="common-offers__item">
+                    <img class="common-offers__pic" src="../img/cars/offers/16.png" alt="Картинка машины">
+                    <div class="common-offers__info">
+                        <h1 class="common-offers__title">KIA Sportage. LUXE+ 2Л</h1>
+                        <p class="common-offers__city">С аукциона Японии</p>
+                        <div class="common-offers__item_down">
+                            <p class="common-offers__price">от 1 050 000</p>
+                            <a href="#" class="common-offers__more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="common-offers__item">
+                    <img class="common-offers__pic" src="../img/cars/offers/17.png" alt="Картинка машины">
+                    <div class="common-offers__info">
+                        <h1 class="common-offers__title">KIA Sportage. LUXE+ 2Л</h1>
+                        <p class="common-offers__city">С аукциона Японии</p>
+                        <div class="common-offers__item_down">
+                            <p class="common-offers__price">от 600 000 ₽</p>
+                            <a href="#" class="common-offers__more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="common-offers__item">
+                    <img class="common-offers__pic" src="../img/cars/offers/18.png" alt="Картинка машины">
+                    <div class="common-offers__info">
+                        <h1 class="common-offers__title">KIA Sportage. LUXE+ 2Л</h1>
+                        <p class="common-offers__city">С аукциона Японии</p>
+                        <div class="common-offers__item_down">
+                            <p class="common-offers__price">от 850 000 ₽</p>
+                            <a href="#" class="common-offers__more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="common-offers__item">
+                    <img class="common-offers__pic" src="../img/cars/offers/19.png" alt="Картинка машины">
+                    <div class="common-offers__info">
+                        <h1 class="common-offers__title">KIA Sportage. LUXE+ 2Л</h1>
+                        <p class="common-offers__city">С аукциона Японии</p>
+                        <div class="common-offers__item_down">
+                            <p class="common-offers__price">от 440 000 ₽</p>
+                            <a href="#" class="common-offers__more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="show-all">Показать все машины</button>
+
+            <div class="ty-banner">
+                <p class="ty-banner__description">
+                    Не нашли автомобиль у нас, но нужен автокредит?
+                    <a class="ty-banner__description ty-banner__link" href="#">Перейдите к форме заявки</a>
+                </p>
+            </div>
+            <div class="conditions">
+                <p class="conditions__title">Общие условия</p>
+                <div class="conditions__list">
+                    <div class="conditions__item">
+                        <p class="conditions__item-title">Срок</p>
+                        <p class="conditions__item-description">от 6 месяцев до 6 лет</p>
+                    </div>
+                    <div class="conditions__item">
+                        <p class="conditions__item-title">Сумма</p>
+                        <p class="conditions__item-description">от 200 000 до 5 000 000 руб.</p>
+                    </div>
+                    <div class="conditions__item">
+                        <p class="conditions__item-title">Годовая процентная ставка:</p>
+                        <p class="conditions__item-description">от 7,5%*.</p>
+                    </div>
+                    <div class="conditions__item">
+                        <p class="conditions__item-title">Возможность приобретения авто у частного лица</p>
+                    </div>
+                </div>
+                <div class="conditions__full-conditions-link">
+                    <a href="#">Смотреть полные условия кредита</a>
+                </div>
+            </div>
+            <div class="faq-banner">
+                <div class="faq-banner__title">
+                    <p>Часто задаваемые вопросы</p>
+                </div>
+                <div class="faq-banner__item">
+                    <p>Как подать заявку на кредит?</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <div class="footer__main">
+            <div class="services">
+                <div class="service__block">
+                    <div class="service__title">
+                        <p>Частным лицам</p>
+                    </div>
+                    <div class="service__list service__personal">
+                        <a class="service__item" href="#">Банковские карты</a>
+                        <a class="service__item" href="#">Кредиты</a>
+                        <a class="service__item" href="#">Вклады</a>
+                        <a class="service__item" href="#">Ипотека</a>
+                        <a class="service__item" href="#">Страхование</a>
+                        <a class="service__item" href="#">Сейфовые ячейки</a>
+                        <a class="service__item" href="#">Открытие счетов</a>
+                        <a class="service__item" href="#">Обмен валюты</a>
+                        <a class="service__item" href="#">Переводы</a>
+                        <a class="service__item" href="#">Маркетплейс</a>
+                    </div>
+                </div>
+                <div class="service__block">
+                    <div class="service__title">
+                        <p>Бизнесу</p>
+                    </div>
+                    <div class="service__list service__buisness">
+                        <a class="service__item" href="#">Экспресс-МСБ</a>
+                        <a class="service__item" href="#">Расчетно-кассовое обслуживание</a>
+                        <a class="service__item" href="#">Онлайн резервирование счета</a>
+                        <a class="service__item" href="#">Внешнеэкономическая деятельность</a>
+                        <a class="service__item" href="#">Зарплатный проект</a>
+                        <a class="service__item" href="#">Овердрафт</a>
+                        <a class="service__item" href="#">Кредит</a>
+                        <a class="service__item" href="#">Лизинг</a>
+                        <a class="service__item" href="#">Депозиты</a>
+                        <a class="service__item" href="#">Банковские гарантии</a>
+                        <a class="service__item" href="#">Факторинг</a>
+                    </div>
+                </div>
+                <div class="service__block">
+                    <div class="service__title">
+                        <p>О банке</p>
+                    </div>
+                    <div class="service__list service__about">
+                        <a class="service__item" href="#">Новости</a>
+                        <a class="service__item" href="#">Вакансии</a>
+                        <a class="service__item" href="#">Офисы</a>
+                        <a class="service__item" href="#">Инвестиционные услуги</a>
+                        <a class="service__item" href="#">О банке</a>
+                        <a class="service__item" href="#">Реквизиты</a>
+                        <a class="service__item" href="#">Тарифы</a>
+                        <a class="service__item" href="#">Монеты</a>
+                        <a class="service__item" href="#">Непрофильные активы</a>
+                    </div>
+                </div>
+                <div class="service__block">
+                    <div class="service__title">
+                        <p>Дополнительные пункты</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts">
+                <div class="contacts__phone">
+                    <h1 class="contacts__number">8 800 775-56-06</h1>
+                    <p class="contacts__description">Для звонков по всей России (бесплатно)</p>
+                </div>
+                <div class="contacts__phone">
+                    <h1 class="contacts__number">+7 495 232-37-23</h1>
+                    <p class="contacts__description">Для блокировка карт (круглосуточно)</p>
+                </div>
+                <div class="contacts__socials">
+                    <a class="contacts__socials-link" href="#">
+                        <img src="../img/icons/footer/telegram.png" alt="Телеграм">
+                    </a>
+                    <a class="contacts__socials-link" href="#">
+                        <img src="../img/icons/footer/vk.png" alt="ВК">
+                    </a>
+                    <a class="contacts__socials-link" href="#">
+                        <img src="../img/icons/footer/ok.png" alt="Одноклассники">
+                    </a>
+                    <a class="contacts__socials-link" href="#">
+                        <img src="../img/icons/footer/twitter.png" alt="Твиттер">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="agreements">
+            <div class="agreements-line-wrapper">
+                <a class="agreements__item" href="#">FATCA</a>
+                <a class="agreements__item" href="#">Страхование и другие услуги НФО</a>
+                <a class="agreements__item" href="#">Общие условия предоставления банковских гарантий в АО «Солид Банк»</a>
+                <a class="agreements__item" href="#">Памятки по финансовой безопасности</a>
+                <a class="agreements__item" href="#">Обеспечение защиты прав потребителей финансовых услуг</a>
+                <a class="agreements__item" href="#">Методика определения справедливой стоимости финансовых инструментов</a>
+                <a class="agreements__item" href="#">Политика в отношении обработки персональных данных</a>
+                <a class="agreements__item" href="#">Лица, ответственные за сведения на сайте</a>
+                <a class="agreements__item" href="#">Аудиторская компания</a>
+                <a class="agreements__item" href="#">Надзорные органы</a>
+                <a class="agreements__item" href="#">Информация о процентных ставках по договорам банковского вклада с физическими лицами</a>
+                <a class="agreements__item" href="#">Информация, связанная с совершением Банком действий, предусмотренных пунктом 5.6 статьи 7 ФЗ N 115</a>
+            </div>
+        </div>
+        <div class="credits">
+            <div class="footer__site-sign">
+                <p class="footer__site-sign-text">© 2004-2021, АО «Солид Банк» , официальный сайт, генеральная лицензия ЦБ РФ № 1329.</p>
+            </div>
+            <div class="autors">
+                <p class="autors__indication">Разработка сайта - <a class="autors__link" href="#">RASA</a></p>
+            </div>
+        </div>
+    </footer>
+</html>

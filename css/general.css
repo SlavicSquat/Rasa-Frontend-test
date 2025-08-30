@@ -1,0 +1,39 @@
+:root{
+    --margin-side: 60px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.hidden{
+    display: none;
+}
+
+body{
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
+
+@media (max-width: 1024px){
+    :root{
+        --margin-side: 16px;
+    }
+}
